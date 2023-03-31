@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Cores gradientes</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="gradient-box"></div>
+            <div class="row options">
+                <div class="column direction">
+                    <p>Direção</p>
+                    <div class="select-box">
+                        <select>
+                            <option value="to top">Cima</option>
+                            <option value="to right top">Superior direita</option>
+                            <option value="to right">Direita</option>
+                            <option value="to right bottom">Inferior direita</option>
+                            <option value="to bottom">Baixo</option>
+                            <option value="to left bottom">Inferior esquerda</option>
+                            <option value="to left">Esquerda</option>
+                            <option value="to left top" selected>Superior esquerda</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column colors">
+                    <p>Cores</p>
+                    <div class="inputs">
+                        <input type="color" value="#991CD1">
+                        <input type="color" value="#D4307A">
+                    </div>
+                </div>
+        </div>
+        <textarea class="row" disabled>background: linear-gradient(to left top, #991CD1, #D4307A);</textarea>
+        <div class="row buttons">
+            <button class="refresh">Randomizar</button>
+            <button class="copy">Copiar</button>
+        </div>
+    </div>
+    
+</body>
+</html>
